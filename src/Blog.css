@@ -1,0 +1,22 @@
+.bloglist{
+    display: grid;
+    /* RAM method (repeat auto-fit minmax() )*/
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    gap:20px;
+    justify-items: center;
+}
+.blog_poster{
+    width: 400px;
+ 
+    object-fit: contain;
+    border-radius: 10px;
+}
+.blog_description{
+    font-size: 20 px;
+    color:rgb(141, 139, 140);
+}
+.blog{
+    width: 400px;
+    height:fit-content;
+    padding: 20px;
+}
