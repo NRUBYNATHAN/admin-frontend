@@ -1,15 +1,18 @@
-import { Home, Login } from "@mui/icons-material"
 import { Route, Routes } from "react-router-dom"
+import {BlogsList} from "./BlogsList"
+import { AddBlog } from "./AddBlog"
 
-
+//this is new branch 
 function App() {
   return (
     <div>
-      <h1>admin frontend</h1>
+  
       <Routes>
-      <Route  path="/" element={<Home/>} />
-      <Route  path="/admin"element={<Login/>} />
-      <Route  path="/signup"element={<SignUp/>} />
+      <Route  path="/" element={<BlogsList/>} />
+      <Route  path="/addblog" element={<AddBlog/>} />
+  
+      {/* <Route  path="/admin"element={<Login/>} />
+      <Route  path="/signup"element={<SignUp/>} /> */}
         
       </Routes>
     </div>
