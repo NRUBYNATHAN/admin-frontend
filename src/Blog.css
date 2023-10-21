@@ -1,22 +1,62 @@
+
 .bloglist{
-    display: grid;
-    /* RAM method (repeat auto-fit minmax() )*/
-    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
-    gap:20px;
-    justify-items: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap:20px;
+margin-left: 150px;
+margin-right: 150px;
+margin-bottom: 150px;
+
 }
 .blog_poster{
-    width: 400px;
- 
+    width:100%;
     object-fit: contain;
     border-radius: 10px;
 }
 .blog_description{
-    font-size: 20 px;
+    font-size: 23px;
     color:rgb(141, 139, 140);
 }
 .blog{
-    width: 400px;
+   
+    width: 100%;
     height:fit-content;
     padding: 20px;
+}
+.numbers{
+    color: rgb(8, 219, 8);
+}
+.theme{
+    background-image: url("https://www.holidify.com/images/bgImages/PARIS.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur;
+    padding: 50px;
+    width: 100%;
+    height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.theme_des{
+    font-size: 30px;
+    color:white;
+}
+.heading{
+    font-size: 40px;
+}
+.img1{
+    width: 80px;
+    height:80px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.navbar{
+ 
+    position: fixed;
+    width: 100%;
 }

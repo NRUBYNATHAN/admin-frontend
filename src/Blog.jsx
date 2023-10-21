@@ -2,10 +2,12 @@
 import Card from '@mui/material/Card';
 import "./Blog.css";
 
-export function Blog({ data,id,EditButton,DeletteButton }) {
+export function Blog({number, data,id,EditButton,DeletteButton }) {
 
  
   return (
+<div>
+<h2><span className='numbers'>LESSION :</span> {number} </h2>
 
   <Card className='blog' >
     
@@ -16,6 +18,6 @@ export function Blog({ data,id,EditButton,DeletteButton }) {
         {EditButton} {DeletteButton} 
           </div>
     </Card>
-
+    </div>
   );
 }
