@@ -40,8 +40,13 @@ const getBlogs=()=>{
  <div>
    
       <div className="bloglist">
-        {blog?.map((mv) => 
+      <h1 className="heading">Blog Website</h1>
+      <div className="theme">
+        <h3 className="theme_des">Best Places in the World That You Just Can't Miss!</h3>
+      </div>
+        {blog?.map((mv,index) => 
         (<Blog key={mv._id} 
+          number={index+1}
         data={mv} 
         id={mv._id} 
         EditButton={  
