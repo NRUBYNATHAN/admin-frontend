@@ -10,10 +10,6 @@ function App() {
       <Routes>
       <Route  path="/" element={<BlogsList/>} />
       <Route  path="/addblog" element={<AddBlog/>} />
-  
-      {/* <Route  path="/admin"element={<Login/>} />
-      <Route  path="/signup"element={<SignUp/>} /> */}
-        
       </Routes>
     </div>
   )
